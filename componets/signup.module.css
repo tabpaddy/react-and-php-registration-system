@@ -1,0 +1,167 @@
+/* From Uiverse.io by ammarsaa */ 
+.signupContainer{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: black;
+    margin: 2rem 0;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: black;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(9, 3, 3, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline black;
+  }
+  
+  .signin a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: blanchedalmond;
+    color: black;
+    width: 100%;
+    padding: 20px 0px 05px 0px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: black;
+    top: -18px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: blanchedalmond;
+  }
+  
+  .submit:hover {
+    background-color: blanchedalmond;
+  }
+
+  .error{
+    color: red;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin: 1em auto;
+  }
+
+  .messages{
+    color: red;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin: 1em auto;
+  }
+
+  .strength{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 1em auto;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
